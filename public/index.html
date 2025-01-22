@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libreria</title>
+  </head>
+  <body>
+    <h1>Libreria</h1>
+
+    <h2>Agregar libro</h2>
+    <form id="addProductForm">
+      <label for="ISBN">ISBN</label>
+      <input type="text" id="ISBN" />
+
+      <label for="titulo">titulo</label>
+      <input type="text" id="titulo" />
+
+      <label for="autor">autor</label>
+      <input type="text" id="autor" />
+
+      <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Libros</h2>
+    <button id="getLibros">Mostrar todos</button>
+    <br>
+    <input type="text" placeholder="ISBN" id="ISBNNUevo"/>
+    <button id="getLibroISBN">Mostrar por ISBN</button>
+    <button id="eliminarLibro">Eliminar por ISBN</button>
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>ISBN</th>
+          <th>Titulo</th>
+          <th>Autor</th>
+        </tr>
+      </thead>
+      <tbody id="productList"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
